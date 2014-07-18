@@ -1,0 +1,7 @@
+This text will be visible on load of the application.
+<br />
+goto: <br />
+<ul>
+	<li>{{#link-to 'card'}}Card{{/link-to}}</li>
+	<li>{{#link-to 'list'}}List{{/link-to}}</li>
+</ul>

@@ -2,15 +2,16 @@
 	'use strict';
 
 	define([
-	'ember'
-	], function (Ember) {
+	'ember',
+	'models/cardModel'
+	], function (Ember, CardModel) {
 		var CardRoute = Ember.Route.extend({
-        model: function () {
-        	return {name: 'sushil'};
-        }
-    });
+                model: function () {
+        	        return CardModel;
+                }
+            });
 
-    return CardRoute;
+        return CardRoute;
 	});
 
 })(window);

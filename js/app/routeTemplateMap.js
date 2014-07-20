@@ -5,14 +5,16 @@
 		'jQuery',
 		'ember',
 		'text!tpl/index.hdb',
-		'text!tpl/item.hdb'
-	], function ($, Ember, indexTpl, itemTpl) {
+		'text!tpl/item.hdb',
+		'text!tpl/card.hdb'
+	], function ($, Ember, indexTpl, itemTpl, cardTpl) {
 		var Handlebars = Ember.Handlebars,
-				TEMPLATES = Ember.TEMPLATES;
+			TEMPLATES = Ember.TEMPLATES;
 
 		$.extend(TEMPLATES, {
 			index: Handlebars.compile(indexTpl),
-			'list/item': Handlebars.compile(itemTpl)
+			item: Handlebars.compile(itemTpl),
+			'item/name': Handlebars.compile(cardTpl)
 		});
 
 		return TEMPLATES;

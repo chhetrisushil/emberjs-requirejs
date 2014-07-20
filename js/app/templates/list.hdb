@@ -1,7 +1,7 @@
 <ul>
 	{{#each model}}
 		<li>
-			{{#link-to 'list.item' id}}{{label}}{{/link-to}}
+			{{#link-to 'item' id}}{{label}}{{/link-to}}
 		</li>
 	{{/each}}
 </ul>

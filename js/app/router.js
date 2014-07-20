@@ -14,7 +14,9 @@
 			_self.route('index', {path: '/'});
 			_self.route('card', {path: '/card/'});
 			_self.resource('list', {path: '/list/'}, function () {
-				this.route('item', {path: '/:itemId/'});
+                this.resource('item', {path: '/:itemId/'}, function () {
+                    this.route('name', {path: '/:name'});
+                });
 			});
 		});
 

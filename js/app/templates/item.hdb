@@ -1,1 +1,1 @@
-this is the value {{model}}
+this is the value {{model.id}} {{#link-to 'item.name' label}}{{label}}{{/link-to}}<br />{{outlet}}

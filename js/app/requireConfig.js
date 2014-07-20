@@ -8,7 +8,9 @@
 	        'ember': 'libs/ember',
 	        'tpl': 'app/templates',
 	        'routes': 'app/routes',
-	        'views': 'app/views'
+	        'views': 'app/views',
+	        'controllers': 'app/controllers',
+	        'models': 'app/models'
 	    },
 
 	    shim: {

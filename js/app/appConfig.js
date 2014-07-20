@@ -7,12 +7,16 @@
 		'routes/cardRoute',
 		'routes/listRoute',
 		'routes/itemRoute',
+		'routes/nameRoute',
 
 		'views/cardView',
 		'views/listView',
 
+		'controllers/cardController',
+		'controllers/nameController',
+
 		'app/routeTemplateMap'
-	], function (Router, CardRoute, ListRoute, ItemRoute, CardView, ListView) {
+	], function (Router, CardRoute, ListRoute, ItemRoute, NameRoute, CardView, ListView, CardController, NameController) {
 		return {
 			rootElement: '#ember-root',
 
@@ -21,13 +25,19 @@
 			/*Begin: Routes*/
 			CardRoute: CardRoute,
 			ListRoute: ListRoute,
-			ListItemRoute: ItemRoute,
+			ItemRoute: ItemRoute,
+			ItemNameRoute: NameRoute,
 			/*End: Routes*/
 
 			/*Begin: Views*/
 			CardView: CardView,
-			ListView: ListView
+			ListView: ListView,
 			/*End: Views*/
+
+			/*Begin: Controllers*/
+			CardController: CardController,
+			ItemNameController: NameController
+			/*End: Controllers*/
 		};
 	});
 

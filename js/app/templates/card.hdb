@@ -1,1 +1,1 @@
-<div class="card">this is a card template {{name}}</div>
+<div class="card">this is a card template "{{label}}"</div>

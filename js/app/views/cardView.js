@@ -6,12 +6,10 @@
 		'text!tpl/card.hdb'
 	], function (Ember, cardTpl) {
 		var Handlebars = Ember.Handlebars,
-				CardView;
-
-		Ember.TEMPLATES['card'] = Handlebars.compile(cardTpl);
+		    CardView;
 
 		CardView = Ember.View.extend({
-			templateName: 'card'
+			template: Handlebars.compile(cardTpl)
 		});
 
 		return CardView;

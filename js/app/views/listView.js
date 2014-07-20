@@ -6,7 +6,7 @@
 		'text!tpl/list.hdb'
 	], function (Ember, listTpl) {
 		var Handlebars = Ember.Handlebars,
-				ListView;
+			ListView;
 
 		ListView = Ember.View.extend({
 			template: Handlebars.compile(listTpl)

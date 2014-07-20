@@ -10,7 +10,8 @@
 	        'routes': 'app/routes',
 	        'views': 'app/views',
 	        'controllers': 'app/controllers',
-	        'models': 'app/models'
+	        'models': 'app/models',
+	        'utils': 'app/utils/utils'
 	    },
 
 	    shim: {
